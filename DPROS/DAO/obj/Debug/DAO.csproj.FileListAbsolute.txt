@@ -1,0 +1,9 @@
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\bin\Debug\DAO.dll
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\bin\Debug\DAO.pdb
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\bin\Debug\DTO.dll
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\bin\Debug\DTO.pdb
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\obj\Debug\DAO.dll
+D:\IT\1.PROJECT\WINFORM\DProS\DAO\obj\Debug\DAO.pdb

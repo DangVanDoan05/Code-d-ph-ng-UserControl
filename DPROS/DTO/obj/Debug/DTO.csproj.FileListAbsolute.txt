@@ -1,0 +1,6 @@
+D:\IT\1.PROJECT\WINFORM\DProS\DTO\bin\Debug\DTO.dll
+D:\IT\1.PROJECT\WINFORM\DProS\DTO\bin\Debug\DTO.pdb
+D:\IT\1.PROJECT\WINFORM\DProS\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\IT\1.PROJECT\WINFORM\DProS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\IT\1.PROJECT\WINFORM\DProS\DTO\obj\Debug\DTO.dll
+D:\IT\1.PROJECT\WINFORM\DProS\DTO\obj\Debug\DTO.pdb

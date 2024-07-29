@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D069DBD2-9E00-41AB-9691-5B44560E2016}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DProS</RootNamespace>
+    <AssemblyName>DProS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.1.UI, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v19.1.Core, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="ExcelDataReader, Version=3.7.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.7.0\lib\netstandard2.0\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.7.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.7.0\lib\netstandard2.0\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonConstant.cs" />
+    <Compile Include="Common\ExcelReader.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mold Manager\ucMoldInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mold Manager\ucMoldInfor.Designer.cs">
+      <DependentUpon>ucMoldInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mold Manager\ucMoldUsing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mold Manager\ucMoldUsing.Designer.cs">
+      <DependentUpon>ucMoldUsing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Box Manager\ucBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Box Manager\ucBox.Designer.cs">
+      <DependentUpon>ucBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Box Manager\ucBoxInf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Box Manager\ucBoxInf.Designer.cs">
+      <DependentUpon>ucBoxInf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Box Manager\ucResidualBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Box Manager\ucResidualBox.Designer.cs">
+      <DependentUpon>ucResidualBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucCoupontMat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucCoupontMat.Designer.cs">
+      <DependentUpon>ucCoupontMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucDeliveryMat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucDeliveryMat.Designer.cs">
+      <DependentUpon>ucDeliveryMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucInventoryMatDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucInventoryMatDate.Designer.cs">
+      <DependentUpon>ucInventoryMatDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucMatBy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucMatBy.Designer.cs">
+      <DependentUpon>ucMatBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucMatSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucMatSupplier.Designer.cs">
+      <DependentUpon>ucMatSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucMatUsing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucMatUsing.Designer.cs">
+      <DependentUpon>ucMatUsing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucPriceChar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucPriceChar.Designer.cs">
+      <DependentUpon>ucPriceChar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucPriceMat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucPriceMat.Designer.cs">
+      <DependentUpon>ucPriceMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucTotalMat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucTotalMat.Designer.cs">
+      <DependentUpon>ucTotalMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucUpdateFC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\Oder Manager\ucUpdateFC.Designer.cs">
+      <DependentUpon>ucUpdateFC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucDeliveryRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucDeliveryRecord.Designer.cs">
+      <DependentUpon>ucDeliveryRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucDirectiveParoduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucDirectiveParoduct.Designer.cs">
+      <DependentUpon>ucDirectiveParoduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucPOFix.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucPOFix.Designer.cs">
+      <DependentUpon>ucPOFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucPOInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucPOInput.Designer.cs">
+      <DependentUpon>ucPOInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucPOOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Production Manager\PO Manager\ucPOOutput.Designer.cs">
+      <DependentUpon>ucPOOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mold Manager\ucMoldInfor.resx">
+      <DependentUpon>ucMoldInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mold Manager\ucMoldUsing.resx">
+      <DependentUpon>ucMoldUsing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Box Manager\ucBox.resx">
+      <DependentUpon>ucBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Box Manager\ucBoxInf.resx">
+      <DependentUpon>ucBoxInf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Box Manager\ucResidualBox.resx">
+      <DependentUpon>ucResidualBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucCoupontMat.resx">
+      <DependentUpon>ucCoupontMat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucDeliveryMat.resx">
+      <DependentUpon>ucDeliveryMat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucInventoryMatDate.resx">
+      <DependentUpon>ucInventoryMatDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucMatBy.resx">
+      <DependentUpon>ucMatBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucMatSupplier.resx">
+      <DependentUpon>ucMatSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucMatUsing.resx">
+      <DependentUpon>ucMatUsing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucPriceChar.resx">
+      <DependentUpon>ucPriceChar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucPriceMat.resx">
+      <DependentUpon>ucPriceMat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucTotalMat.resx">
+      <DependentUpon>ucTotalMat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\Oder Manager\ucUpdateFC.resx">
+      <DependentUpon>ucUpdateFC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\PO Manager\ucDeliveryRecord.resx">
+      <DependentUpon>ucDeliveryRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\PO Manager\ucDirectiveParoduct.resx">
+      <DependentUpon>ucDirectiveParoduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\PO Manager\ucPOFix.resx">
+      <DependentUpon>ucPOFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\PO Manager\ucPOInput.resx">
+      <DependentUpon>ucPOInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Manager\PO Manager\ucPOOutput.resx">
+      <DependentUpon>ucPOOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{c4ee540a-10cc-45c7-9dcb-180d7a3325e7}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{f5a3f838-cc44-4535-aab0-182861e8bef9}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
